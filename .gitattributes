@@ -1,0 +1,7 @@
+# Force LF line endings for shell scripts even on Windows checkouts
+# (git core.autocrlf=true converts to CRLF otherwise, which breaks
+#  '#!/usr/bin/env bash' as 'bash\r' inside Linux containers).
+.gitattributes text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+Dockerfile text eol=lf
